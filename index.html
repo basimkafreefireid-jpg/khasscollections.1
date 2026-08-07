@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHASS COLLECTIONS — Premium Streetwear, Made in Pakistan</title>
+<meta name="description" content="KHASS COLLECTIONS — premium custom & printed T-shirts. Cash on delivery, all over Pakistan.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Loader -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">KHASS</div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">KHASS</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#drops">New Drops</a>
+      <a href="#custom">Custom Orders</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn" id="searchToggleMobile" aria-label="Search" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#top">Home</a>
+  <a href="#shop">Shop</a>
+  <a href="#drops">New Drops</a>
+  <a href="#custom">Custom Orders</a>
+  <a href="#about">About</a>
+  <div class="mobile-search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8d8d97" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" placeholder="Search products..." id="mobileSearchStub" readonly onclick="document.getElementById('searchToggle').click()">
+  </div>
+</div>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="glow glow1"></div>
+  <div class="glow glow2"></div>
+  <div class="glow glow3"></div>
+  <div class="container hero-inner">
+    <span class="flag-tag">AZADI SALE 🇵🇰</span>
+    <h1 class="headline">YOUR STYLE.<span class="line2 grad-text">YOUR STATEMENT.</span></h1>
+    <p class="sub">Premium custom &amp; printed T-shirts made for your vibe. Cash on delivery, all over Pakistan.</p>
+    <div class="price-row">
+      <span class="price-old">Rs. 1,599</span>
+      <span class="price-new">Rs. 1,299</span>
+    </div>
+    <div class="azadi-banner">AZADI SALE</div>
+    <button class="btn btn-primary" data-scroll-shop>SHOP NOW →</button>
+  </div>
+</section>
+
+<!-- Product grid -->
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-head reveal" id="drops">
+      <span class="eyebrow">The Lineup</span>
+      <h2 class="section-title">FRESH DROPS</h2>
+      <p class="section-sub">WEAR SOMETHING THAT FEELS LIKE YOU.</p>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- Custom order -->
+<section class="section" id="custom">
+  <div class="container">
+    <div class="custom-wrap reveal">
+      <span class="eyebrow">Made Just For You</span>
+      <h2>MAKE IT YOURS.</h2>
+      <p>Got your own design? Send it to us and we'll turn it into your custom piece.</p>
+
+      <div class="upload-zone" id="uploadZone">
+        <label class="upload-label" for="customFile">
+          <strong>Click to upload</strong> or drag your design here<br>PNG, JPG — up to 10MB each
+        </label>
+        <input type="file" id="customFile" accept="image/*" multiple>
+        <div id="customPreview"></div>
+      </div>
+
+      <button class="btn btn-primary" type="button" onclick="document.getElementById('customFile').click()">CREATE CUSTOM ORDER</button>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about-visual reveal"><span>KHASS</span></div>
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>NOT JUST A BRAND. A STATEMENT.</h2>
+      <p>KHASS COLLECTIONS started with one idea — streetwear that actually says something. No filler, no boring basics. Every piece is picked and printed for people who want their fit to hit as hard as their playlist.</p>
+      <p>Based in Pakistan, shipped anywhere in the country. Cash on delivery, because we get it — you want to see it before you pay for it. That's just Khass.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Social proof -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Real People, Real Fits</span>
+      <h2 class="section-title">PEOPLE ARE WEARING KHASS</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-placeholder reveal">
+        Customer photos and reviews go here once orders start rolling in — this section updates automatically as reviews are added.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Follow -->
+<section class="section follow">
+  <div class="container reveal">
+    <span class="eyebrow">Stay In The Loop</span>
+    <h2 class="section-title">FOLLOW THE DROP</h2>
+    <div class="social-row">
+      <a class="social-pill" href="#" target="_blank" rel="noopener">Instagram — Khass.Collections.WA</a>
+      <a class="social-pill" href="#" target="_blank" rel="noopener">TikTok — Khass.Collections.WA</a>
+      <a class="social-pill" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">KHASS</div>
+        <p>Premium custom &amp; printed T-shirts made for your vibe. Cash on delivery — all over Pakistan.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#drops">New Drops</a></li>
+          <li><a href="#custom">Custom Orders</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Cash On Delivery — All Over Pakistan</li>
+          <li><a href="#" target="_blank" rel="noopener">Instagram / TikTok: Khass.Collections.WA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KHASS COLLECTIONS</span>
+      <span>Karachi · Lahore · Islamabad · Everywhere in between</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart overlay + drawer -->
+<div class="overlay" id="cartOverlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="close-btn" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="sum-row"><span>Subtotal</span><span id="sumSubtotal">Rs. 0</span></div>
+    <div class="sum-row"><span>Delivery</span><span id="sumDelivery">—</span></div>
+    <div class="sum-row total"><span>Total</span><span id="sumTotal">Rs. 0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn" style="margin-top:16px;">Checkout</button>
+  </div>
+</aside>
+
+<!-- Product modal -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <button class="modal-close" id="pmClose" aria-label="Close">✕</button>
+    <div class="product-modal-grid">
+      <div class="pm-image"><img id="pmImage" src="" alt=""></div>
+      <div class="pm-info">
+        <span class="pm-tag">AZADI SALE 🇵🇰</span>
+        <h2 id="pmName"></h2>
+        <div class="pm-price-row">
+          <span class="pm-old" id="pmOld"></span>
+          <span class="pm-new" id="pmNew"></span>
+        </div>
+        <p class="pm-desc" id="pmDesc"></p>
+
+        <div class="block-label">Select Size</div>
+        <div class="size-row" id="pmSizes"></div>
+
+        <div class="block-label">Quantity</div>
+        <div class="qty-selector">
+          <button class="qty-btn" id="pmQtyMinus" aria-label="Decrease quantity">−</button>
+          <span class="qty-val" id="pmQty">1</span>
+          <button class="qty-btn" id="pmQtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="pm-actions">
+          <button class="btn btn-outline" id="pmAddCart" style="flex:1;">ADD TO CART</button>
+          <button class="btn btn-primary" id="pmBuyNow" style="flex:1;">BUY NOW</button>
+        </div>
+
+        <div class="delivery-info">
+          <div><b>Cash on Delivery</b> — pay when it arrives at your door.</div>
+          <div><b>Delivery:</b> All over Pakistan, 3–6 working days.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Checkout modal -->
+<div class="modal-overlay" id="checkoutModal">
+  <div class="modal" style="max-width:560px;">
+    <button class="modal-close" id="checkoutClose" aria-label="Close">✕</button>
+    <form class="checkout-body" id="checkoutForm" novalidate>
+      <h2>Checkout</h2>
+      <p class="sub-note">Fill in your details — pay cash when your order arrives.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="fName">Full Name</label>
+          <input type="text" id="fName" name="fName" required>
+          <div class="field-err">Please enter your full name</div>
+        </div>
+        <div class="field">
+          <label for="fPhone">Phone Number</label>
+          <input type="tel" id="fPhone" name="fPhone" placeholder="03XXXXXXXXX" required>
+          <div class="field-err">Please enter a valid Pakistani phone number</div>
+        </div>
+        <div class="field">
+          <label for="fAddress">Complete Address</label>
+          <textarea id="fAddress" name="fAddress" rows="2" required></textarea>
+          <div class="field-err">Please enter your full address</div>
+        </div>
+        <div class="form-grid two">
+          <div class="field">
+            <label for="fCity">City</label>
+            <input type="text" id="fCity" name="fCity" required>
+            <div class="field-err">Please enter your city</div>
+          </div>
+          <div class="field">
+            <label for="fProvince">Province</label>
+            <select id="fProvince" name="fProvince" required>
+              <option value="">Select</option>
+              <option>Punjab</option>
+              <option>Sindh</option>
+              <option>Khyber Pakhtunkhwa</option>
+              <option>Balochistan</option>
+              <option>Gilgit-Baltistan</option>
+              <option>Azad Kashmir</option>
+              <option>Islamabad Capital Territory</option>
+            </select>
+            <div class="field-err">Please select a province</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fPostal">Postal Code (optional)</label>
+          <input type="text" id="fPostal" name="fPostal">
+        </div>
+        <div class="field">
+          <label for="fNotes">Order Notes (optional)</label>
+          <textarea id="fNotes" name="fNotes" rows="2" placeholder="e.g. call before delivery"></textarea>
+        </div>
+      </div>
+
+      <div class="cod-box"><span class="cod-dot"></span> Payment: Cash on Delivery</div>
+
+      <div class="checkout-summary">
+        <div class="sum-row"><span>Subtotal</span><span id="coSubtotal">Rs. 0</span></div>
+        <div class="sum-row"><span>Delivery</span><span id="coDelivery">Rs. 0</span></div>
+        <div class="sum-row total"><span>Total</span><span id="coTotal">Rs. 0</span></div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:22px;">PLACE ORDER</button>
+    </form>
+  </div>
+</div>
+
+<!-- Success modal -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal" style="max-width:460px;position:relative;overflow:hidden;">
+    <div class="confetti" id="confettiWrap"></div>
+    <button class="modal-close" id="successClose" aria-label="Close">✕</button>
+    <div class="success-body">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h2>ORDER CONFIRMED 🎉</h2>
+      <p>Thank you for shopping with KHASS COLLECTIONS.</p>
+      <p>We'll call to confirm before it ships. Pay cash when it arrives at your door.</p>
+      <span class="order-id" id="orderId">Order #KC000000</span>
+      <button class="btn btn-primary btn-block" id="successContinue">CONTINUE SHOPPING</button>
+    </div>
+  </div>
+</div>
+
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8d8d97" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+    <button class="close-btn" id="searchClose" aria-label="Close search">✕</button>
+  </div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <span class="toast-dot"></span>
+  <span>Added to cart</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
